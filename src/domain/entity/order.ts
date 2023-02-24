@@ -18,6 +18,21 @@ export default class Order{
         this.validate()
     }
 
+    changeCustomerId(customer: string) { 
+        this._customerId = customer
+    }
+
+
+    changeItems(orderItem : OrderItem[]) {
+
+        this._items = orderItem
+    }
+
+    changeId(id: string){
+        this._id = id
+    }
+
+
     validate(): boolean{
         if( this._id.length === 0){
             throw new Error("Id is required")
