@@ -26,6 +26,7 @@ export default class Order{
     changeItems(orderItem : OrderItem[]) {
 
         this._items = orderItem
+      //  this._items = orderItem.map(item => new OrderItem(item.id, item.name, item.price, item.productId, item.quantity))
     }
 
     changeId(id: string){
